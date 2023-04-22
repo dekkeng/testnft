@@ -10,15 +10,15 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThirdwebProvider activeChain={activeChain}>
       <Head>
-        <title>thirdweb NFT Drop Minting Customizable Page</title>
+        <title>My Life As A Dog</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
-          content="Learn How To Use Thirdweb's NFT Drop contract and create a customizable NFT Drop minting page"
+          content="My Life As A Dog NFT"
         />
         <meta
           name="keywords"
-          content="Thirdweb, thirdweb NFT drop, how to make thirdweb nft drop, how to make nft collection thirdweb"
+          content="MLAAD,My Life As A Dog, NFT"
         />
       </Head>
       <Component {...pageProps} />

@@ -258,8 +258,7 @@ const Home: NextPage = () => {
               ) ? (
                 <div>
                   <h2>
-                    This drop is not ready to be minted yet. (No claim condition
-                    set)
+                    This drop is not ready to be minted yet.
                   </h2>
                 </div>
               ) : !activeClaimCondition.data && claimConditions.data ? (
@@ -302,7 +301,7 @@ const Home: NextPage = () => {
                         isDisabled={!canClaim || buttonLoading}
                         onError={(err) => {
                           console.error(err);
-                          alert("Error claiming NFTs");
+                          alert("Error claiming NFTs : " + err);
                         }}
                         onSuccess={() => {
                           setQuantity(1);
@@ -319,17 +318,6 @@ const Home: NextPage = () => {
           </>
         )}
       </div>
-      {/* Powered by thirdweb */}{" "}
-      <Image
-        src="/logo.png"
-        alt="thirdweb Logo"
-        width={135}
-        height={22}
-        className={styles.buttonGapTop}
-        style={{
-          objectFit: "contain",
-        }}
-      />
     </div>
   );
 };
